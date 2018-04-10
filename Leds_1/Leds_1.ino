@@ -8,14 +8,18 @@
 //********** Includes *************************************************************
 
 //********** Variables ************************************************************
-const int led0 = 5;          // donar nom al pin 5 de l’Arduino
-const int led1 = 6;          // donar nom al pin 6 de l’Arduino
-const int led2 = 7;          // donar nom al pin 7 de l’Arduino
-const int led3 = 8;          // donar nom al pin 8 de l’Arduino
-const int led4 = 9;          // donar nom al pin 9 de l’Arduino
-const int led5 = 10;         // donar nom al pin 10 de l’Arduino
-const int led6 = 11;         // donar nom al pin 11 de l’Arduino
-const int led7 = 12;         // donar nom al pin 12 de l’Arduino
+const int led0 = 2;          // donar nom al pin 5 de l’Arduino
+const int led1 = 3;          // donar nom al pin 6 de l’Arduino
+const int led2 = 4;          // donar nom al pin 7 de l’Arduino
+const int led3 = 5;          // donar nom al pin 8 de l’Arduino
+const int led4 = 6;          // donar nom al pin 9 de l’Arduino
+const int led5 = 7;         // donar nom al pin 10 de l’Arduino
+const int led6 = 8;         // donar nom al pin 11 de l’Arduino
+const int led7 = 9;
+const int led8 = 10;
+const int led9 = 11;
+const int led10 = 12;
+const int led11 = 13;                                      // donar nom al pin 12 de l’Arduino
 
 //********** Setup ****************************************************************
 void setup()
@@ -27,33 +31,145 @@ void setup()
   pinMode(led4, OUTPUT);     // definir el pin 9 com una sortida
   pinMode(led5, OUTPUT);     // definir el pin 10 com una sortida
   pinMode(led6, OUTPUT);     // definir el pin 11 com una sortida
-  pinMode(led7, OUTPUT);     // definir el pin 12 com una sortida
+  pinMode(led7, OUTPUT);
+  pinMode(led8, OUTPUT);
+  pinMode(led9, OUTPUT);
+  pinMode(led10, OUTPUT);
+  pinMode(led11, OUTPUT);
+  
+  // definir el pin 12 com una sortida
 }
 
 //********** Loop *****************************************************************
 void loop()
 {
-  digitalWrite(led0, HIGH);    // posar a 5V el pin 5
-  digitalWrite(led1, HIGH);    // posar a 5V el pin 6
-  digitalWrite(led2, HIGH);    // posar a 5V el pin 7
-  digitalWrite(led3, HIGH);    // posar a 5V el pin 8
-  digitalWrite(led4, HIGH);    // posar a 5V el pin 9
-  digitalWrite(led5, HIGH);    // posar a 5V el pin 10
-  digitalWrite(led6, HIGH);    // posar a 5V el pin 11
-  digitalWrite(led7, HIGH);    // posar a 5V el pin 12
+  digitalWrite(led0, LOW);    
+  digitalWrite(led1, HIGH);    
+  digitalWrite(led2, HIGH);    
+  digitalWrite(led3, LOW);    
+  digitalWrite(led4, LOW);    
+  digitalWrite(led5, LOW);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led8, LOW);
+  digitalWrite(led9, LOW);
+  digitalWrite(led10, HIGH);
+  digitalWrite(led11, HIGH);
   
-  delay(500);                  // es queden leds 500ms encesos
   
-  digitalWrite(led0, LOW);     // posar a 0V el pin 5
-  digitalWrite(led1, LOW);     // posar a 0V el pin 6
-  digitalWrite(led2, LOW);     // posar a 0V el pin 7
-  digitalWrite(led3, LOW);     // posar a 0V el pin 8
-  digitalWrite(led4, LOW);     // posar a 0V el pin 9
-  digitalWrite(led5, LOW);     // posar a 0V el pin 10
-  digitalWrite(led6, LOW);     // posar a 0V el pin 11
-  digitalWrite(led7, LOW);     // posar a 0V el pin 12
+  delay(150);                  
   
-  delay(500);                  // es queden leds 500ms apagats
+  digitalWrite(led0, LOW);    
+  digitalWrite(led1, LOW);    
+  digitalWrite(led2, HIGH);    
+  digitalWrite(led3, HIGH);    
+  digitalWrite(led4, LOW);    
+  digitalWrite(led5, LOW);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led7, LOW);
+  digitalWrite(led8, LOW);
+  digitalWrite(led9, HIGH);
+  digitalWrite(led10, HIGH);
+  digitalWrite(led11, LOW);
+  
+  delay(150);           
+
+
+  digitalWrite(led0, LOW);    
+  digitalWrite(led1, LOW);    
+  digitalWrite(led2, LOW);    
+  digitalWrite(led3, HIGH);    
+  digitalWrite(led4, HIGH);    
+  digitalWrite(led5, LOW);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led7, LOW);
+  digitalWrite(led8, HIGH);
+  digitalWrite(led9, HIGH);
+  digitalWrite(led10, LOW);
+  digitalWrite(led11, LOW);
+  
+  delay(150);  
+
+
+  digitalWrite(led0, LOW);    
+  digitalWrite(led1, LOW);    
+  digitalWrite(led2, LOW);    
+  digitalWrite(led3, LOW);    
+  digitalWrite(led4, HIGH);    
+  digitalWrite(led5, HIGH);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led7, HIGH);
+  digitalWrite(led8, HIGH);
+  digitalWrite(led9, LOW);
+  digitalWrite(led10, LOW);
+  digitalWrite(led11, LOW);
+  
+  delay(150); 
+
+
+  digitalWrite(led0, LOW);    
+  digitalWrite(led1, LOW);    
+  digitalWrite(led2, LOW);    
+  digitalWrite(led3, LOW);    
+  digitalWrite(led4, HIGH);    
+  digitalWrite(led5, HIGH);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led7, HIGH);
+  digitalWrite(led8, HIGH);
+  digitalWrite(led9, LOW);
+  digitalWrite(led10, LOW);
+  digitalWrite(led11, LOW);
+  
+  delay(150); 
+
+
+    digitalWrite(led0, LOW);    
+  digitalWrite(led1, LOW);    
+  digitalWrite(led2, LOW);    
+  digitalWrite(led3, HIGH);    
+  digitalWrite(led4, HIGH);    
+  digitalWrite(led5, LOW);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led7, LOW);
+  digitalWrite(led8, HIGH);
+  digitalWrite(led9, HIGH);
+  digitalWrite(led10, LOW);
+  digitalWrite(led11, LOW);
+  
+  delay(150);
+
+
+    digitalWrite(led0, LOW);    
+  digitalWrite(led1, LOW);    
+  digitalWrite(led2, HIGH);    
+  digitalWrite(led3, HIGH);    
+  digitalWrite(led4, LOW);    
+  digitalWrite(led5, LOW);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led7, LOW);
+  digitalWrite(led8, LOW);
+  digitalWrite(led9, HIGH);
+  digitalWrite(led10, HIGH);
+  digitalWrite(led11, LOW);
+  
+  delay(150);
+
+
+    digitalWrite(led0, LOW);    
+  digitalWrite(led1, HIGH);    
+  digitalWrite(led2, HIGH);    
+  digitalWrite(led3, LOW);    
+  digitalWrite(led4, LOW);    
+  digitalWrite(led5, LOW);    
+  digitalWrite(led6, LOW);    
+  digitalWrite(led8, LOW);
+  digitalWrite(led9, LOW);
+  digitalWrite(led10, HIGH);
+  digitalWrite(led11, HIGH);
+  
+  
+  delay(150);
+
+  
 }
 
 //********** Funcions *************************************************************
